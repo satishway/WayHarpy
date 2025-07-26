@@ -9,18 +9,18 @@ let package = Package(
         .iOS(.v9_0)
     ],
     products: [
-        .library(
-            name: "WayHarpy",
-            targets: ["WayHarpy"]),
+        .library(name: "WayHarpy", targets: ["WayHarpy"])
     ],
     dependencies: [],
     targets: [
         .target(
             name: "WayHarpy",
-            dependencies: [],
-            path: "Harpy",
+            path: "Harpy", // Assuming .m/.h files are here
+            publicHeadersPath: ".", // Or "include" if headers are in a subfolder
             resources: [
-                .copy("Harpy.bundle")
-            ]),
+                .process("../Assets"),        // Include PNGs
+                .process("Harpy.bundle")      // Include the bundle (may need relative correction)
+            ]
+        )
     ]
 ) 
