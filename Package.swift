@@ -18,8 +18,9 @@ let package = Package(
         .target(
             name: "WayHarpy",
             dependencies: [],
-            path: "Sources/WayHarpy",
+            path: "Harpy",
             resources: [
+                .copy("Harpy.bundle")
             ]),
         .testTarget(
             name: "WayHarpyTests",
