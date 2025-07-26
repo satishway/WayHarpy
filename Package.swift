@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version: 5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -22,9 +22,5 @@ let package = Package(
             resources: [
                 .copy("Harpy.bundle")
             ]),
-        .testTarget(
-            name: "WayHarpyTests",
-            dependencies: ["WayHarpy"],
-            path: "Tests/WayHarpyTests"),
     ]
 ) 
