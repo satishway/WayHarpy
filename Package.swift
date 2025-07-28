@@ -13,10 +13,10 @@ let package = Package(
             path: "Harpy",
             exclude: [],
             sources: nil,
-            publicHeadersPath: ".",
             resources: [
                 .process("Harpy.bundle")
-            ]
+            ],
+            publicHeadersPath: "."
         )
     ]
 )
