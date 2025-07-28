@@ -1,10 +1,10 @@
-// swift-tools-version:5.7
+// swift-tools-version: 5.5
 import PackageDescription
 
 let package = Package(
     name: "WayHarpy",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v9_0)
     ],
     products: [
         .library(name: "WayHarpy", targets: ["WayHarpy"])
@@ -12,9 +12,8 @@ let package = Package(
     targets: [
         .target(
             name: "WayHarpy",
-            path: "Harpy",
-            publicHeadersPath: ".",
-            resources: [.copy("Harpy.bundle")]
+            dependencies: [],
+            path: "Harpy"
         )
     ]
 )
