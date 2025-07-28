@@ -14,7 +14,7 @@ let package = Package(
             name: "WayHarpy",
             path: "Harpy",
             publicHeadersPath: ".",
-            resources: [.process("Harpy.bundle")]
+            resources: [.copy("Harpy.bundle")]
         )
     ]
 )
