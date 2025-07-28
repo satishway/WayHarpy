@@ -10,7 +10,8 @@ let package = Package(
         .target(
             name: "WayHarpy",
             dependencies: [],
-            path: "Harpy"
+            path: "Harpy",
+            publicHeadersPath: "." // Needed for Objective-C headers
         )
     ]
 )
