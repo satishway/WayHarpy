@@ -3,9 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "WayHarpy",
-    platforms: [
-        .iOS(.v9_0)
-    ],
     products: [
         .library(name: "WayHarpy", targets: ["WayHarpy"])
     ],
