@@ -1,4 +1,4 @@
-// swift-tools-version: 5.5
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
@@ -11,7 +11,9 @@ let package = Package(
             name: "WayHarpy",
             dependencies: [],
             path: "Harpy",
-            publicHeadersPath: ".", // Needed for Objective-C headers
+            exclude: [],
+            sources: nil,
+            publicHeadersPath: ".",
             resources: [
                 .process("Harpy.bundle")
             ]
