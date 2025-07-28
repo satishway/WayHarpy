@@ -11,7 +11,10 @@ let package = Package(
             name: "WayHarpy",
             dependencies: [],
             path: "Harpy",
-            publicHeadersPath: "." // Needed for Objective-C headers
+            publicHeadersPath: ".", // Needed for Objective-C headers
+            resources: [
+                .process("Harpy.bundle")
+            ]
         )
     ]
 )
