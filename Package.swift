@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "WayHarpy",
+    defaultLocalization: "en",
     products: [
         .library(name: "WayHarpy", targets: ["WayHarpy"])
     ],
